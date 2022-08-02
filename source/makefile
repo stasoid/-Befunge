@@ -3,8 +3,8 @@
 #	Progs and stuff
 
 LYT = -DLYT
-CC = gcc -c -mthrowback -Wall -mpoke-function-name -mlibscl -O2 $(LYT) -o
-LINK = gcc -mlibscl -o
+CC = gcc -c -Wall -O2 $(LYT) -o
+LINK = gcc -o
 
 WOUMI = <WoumInclude$$Path>
 
