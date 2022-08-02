@@ -14,7 +14,7 @@ WOUMI = <WoumInclude$$Path>
 	$(LINK) $@ Woum:lib/limpx.o Woum:lib/osspr.o main.o bef/io.o bef/ip.o bef/main.o bef/mem.o bef/prog.o bef/sem.o bef/stack.o inter/file.o inter/funcs.o inter/main.o inter/redraw.o inter/update.o inter/user.o bef/sem/null.o bef/sem/roma.o bef/sem/hrti.o bef/sem/refc.o bef/sem/modu.o bef/sem/orth.o bef/sem/toys.o bef/sem/mode.o bef/sem/turt.o bef/sem/perl.o bef/dynafing.o bef/sem/base.o bef/sem/cpli.o bef/sem/dirf.o bef/sem/file.o bef/sem/frth.o bef/sem/term.o bef/sem/fixp.o
 
 BefungeLyt:	main.o bef/io.o bef/ip.o bef/main.o bef/mem.o bef/prog.o bef/sem.o bef/stack.o bef/sem/null.o bef/sem/roma.o bef/sem/hrti.o bef/sem/refc.o bef/sem/modu.o bef/sem/orth.o bef/sem/toys.o bef/sem/mode.o bef/sem/turt.o bef/sem/perl.o bef/dynafing.o bef/sem/base.o bef/sem/cpli.o bef/sem/dirf.o bef/sem/file.o bef/sem/frth.o bef/sem/term.o bef/sem/fixp.o
-	$(LINK) $@ main.o bef/io.o bef/ip.o bef/main.o bef/mem.o bef/prog.o bef/sem.o bef/stack.o bef/sem/null.o bef/sem/roma.o bef/sem/hrti.o bef/sem/refc.o bef/sem/modu.o bef/sem/orth.o bef/sem/toys.o bef/sem/mode.o bef/sem/turt.o bef/sem/perl.o bef/dynafing.o bef/sem/base.o bef/sem/cpli.o bef/sem/dirf.o bef/sem/file.o bef/sem/frth.o bef/sem/term.o bef/sem/fixp.o
+	$(LINK) $@ main.o bef/io.o bef/ip.o bef/main.o bef/mem.o bef/prog.o bef/sem.o bef/stack.o bef/sem/null.o bef/sem/roma.o bef/sem/hrti.o bef/sem/refc.o bef/sem/modu.o bef/sem/orth.o bef/sem/toys.o bef/sem/mode.o bef/sem/turt.o bef/sem/perl.o bef/dynafing.o bef/sem/base.o bef/sem/cpli.o bef/sem/dirf.o bef/sem/file.o bef/sem/frth.o bef/sem/term.o bef/sem/fixp.o -lm
 
 
 #	Object files
