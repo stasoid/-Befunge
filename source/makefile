@@ -217,7 +217,7 @@ bef/sem/fixp.c:	bef/sem/fixp.h
 
 #	Header files
 
-main.h:	$(WOUMI)lib.h.limpx
+main.h:	#$(WOUMI)lib.h.limpx
 	touch $@
 
 bef/io.h:	main.h
@@ -247,7 +247,7 @@ inter/file.h:	main.h
 inter/funcs.h:	main.h
 	touch $@
 
-inter/main.h:	main.h $(WOUMI)lib.h.osspr
+inter/main.h:	main.h #$(WOUMI)lib.h.osspr
 	touch $@
 
 inter/redraw.h:	main.h
