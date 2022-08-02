@@ -2,7 +2,7 @@
 
 #	Progs and stuff
 
-#LYT = -DLYT
+LYT = -DLYT
 CC = gcc -c -mthrowback -Wall -mpoke-function-name -mlibscl -O2 $(LYT) -o
 LINK = gcc -mlibscl -o
 
