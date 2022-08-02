@@ -1,0 +1,51 @@
+!Befunge source code release notes
+----------------------------------
+
+To compile !Befunge you'll need:
+
+* A copy of GCC for RISC OS, with the tools/utilites/whatever it was package (i.e. you need a copy of 'touch'). Version 3.4.4 was used to compile this version of !Befunge.
+* A copy of my WOUM library (available at http://www.coderscauldron.com/)
+
+Unpack the source code into !Befunge.source. You should then be able to 'make' the program from that directory.
+
+
+Cross-compiling:
+----------------
+
+Haven't tried it myself. It should work though, but see the 'known issues' section below
+
+
+Porting:
+--------
+
+You can now (as of 0.92) compile a platform independent command line only version of !Befunge. To do this:
+
+1. Rejig the source tree so that the file names fit in with your OS (e.g. bef/c/main renamed to bef/main.c on *nix)
+2. Open the makefile and comment out or disable the $(WOUMI)lib.h.limpx and $(WOUMI)lib.h.osspr dependancies for main.h and inter/main.h
+3. Also modify the CC and LINK variables at the top of the file to point to your compiler and linker, if needed.
+4. Uncomment the LYT variable
+5. Edit the contents of lyt.h, to configure the options you want
+6. Change to the source directory and run:
+   make BefungeLyt
+
+This will produce the binary (BefungeLyt), which you'll probably want to add a .exe extension to before trying to run it. Note that you don't need the WOUM library to compile this version. If you subsequently change the options in lyt.h, you will have to delete all the object files and rebuild from scratch.
+
+Note that I haven't made much of an attempt to modify the I/O routines to work with non-RISC OS VDU terminals, so character I/O (in particular formatting) might not work correctly.
+
+Other stuff:
+------------
+
+* The function names aren't quite as clear as they could be, especially in the interface code.
+* The dynamic fingerprint system is a bit of an ugly hack
+* Ugly makefile
+* More ugly code, etc. etc.
+* If you want all the documentation, extra RISC OS specific files, etc. then you'll have to download the binary release too
+
+
+Legal mumbo jumbo:
+------------------
+
+!Befunge is © Jeffrey Lee 2005. Email me@phlamethrower.co.uk, or visit his silly website at http://www.quote-egnufeb-quote-greaterthan-colon-hash-comma-underscore-at.info/
+
+Do what you like with the code, just don't try selling it or claiming you wrote it all yourself. And if something breaks, it's not my fault. Honest.
+
